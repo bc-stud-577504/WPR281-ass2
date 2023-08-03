@@ -15,15 +15,3 @@ function create_project_block(indx, dict) {
 for (let x of Object.keys(projects)) {
     document.getElementById("projects").innerHTML += create_project_block(x, projects);
 }
-
-// summary, 
-// detailed, 
-// created_by, 
-// created, 
-// project, 
-// person_assigned,
-// priority,
-// target date,
-// actual date,
-// resolution summary,
-// status

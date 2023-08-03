@@ -15,6 +15,18 @@ let users = {
     2: {id: 2, name: "user2", surname: "surname", age: 1}
 };
 
+// summary, 
+// detailed, 
+// created_by, 
+// created, 
+// project, 
+// person_assigned,
+// priority,
+// target date,
+// actual date,
+// resolution summary,
+// status
+
 let tickets = [
     {summary:"summary", detailed:"detailed", created_by: 1, created: new Date(), project: 1, assigned_to: 2,
     priority: "low", target: new Date(), actual: new Date(), res_summary: "summary", status:"closed"},
