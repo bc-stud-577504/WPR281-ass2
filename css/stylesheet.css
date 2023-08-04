@@ -28,6 +28,10 @@ nav a {
     margin: 10px;
 }
 
+#projects li {
+    display: inline-block;
+}
+
 .project {
     border: 2px solid black;
     width: 250px;
