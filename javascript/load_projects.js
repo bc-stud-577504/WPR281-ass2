@@ -12,6 +12,6 @@ function create_project_block(indx, dict) {
             </div>`;
 }
 
-for (let x of Object.keys(projects)) {
-    document.getElementById("projects").innerHTML += create_project_block(x, projects);
+for (let key in projects) {
+    document.getElementById("projects").innerHTML += create_project_block(key, projects);
 }
