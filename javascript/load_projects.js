@@ -4,8 +4,8 @@
 // import {getLocalStorageItem} from "./io";
 // import {createProjectBlock} from "./project";
 
-projects = getLocalStorageItem("Projects");
+let projects = getLocalStorageItem("Projects");
 
 for (let key in projects) {
-    document.getElementById("projects").innerHTML += createProjectBlock(key, projects);
+    document.getElementById("projects").innerHTML += createProjectBlock(projects[key]);
 }

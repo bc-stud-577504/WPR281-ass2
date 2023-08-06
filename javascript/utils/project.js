@@ -25,9 +25,9 @@ function createProject(event) {
     return false;
 }
 
-function createProjectBlock(key, dict) {
-    return `<div onclick="location.href='/pages/project.html?id=${key}'" class='project' id='project${key}'>
-                <p><b>${dict[key].name}</b></p>
-                <p>number of tickets: ${dict[key].tickets}</p>
+function createProjectBlock(project) {
+    return `<div onclick="location.href='/pages/project.html?id=${project.id}'" class='project' id='project${project.id}'>
+                <p><b>${project.name}</b></p>
+                <p>number of tickets: ${project.tickets}</p>
             </div>`;
 }

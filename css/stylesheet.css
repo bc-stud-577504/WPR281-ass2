@@ -24,6 +24,23 @@ nav a {
     color: #FFF;
 }
 
+.nav-wrapper ul li {
+    list-style: none;
+    display: inline-block;
+}
+
+.nav-wrapper ul li a {
+    display: block;
+    text-decoration: none;
+    color:rgb(255, 255, 255);
+    margin: 2px;
+    padding: 2px;
+}
+
+.nav-wrapper ul li a:hover {
+    background-color: rgba(31, 25, 64, 0.522);
+}
+
 #projects {
     margin: 10px;
 }
@@ -34,7 +51,7 @@ nav a {
 
 .project {
     border: 2px solid black;
-    width: 250px;
+    width: 750px;
     margin: 2px 0px 2px 0px;
     padding: 2px;
     display: flex;
@@ -43,5 +60,28 @@ nav a {
 }
 
 .project p {
+    margin: 1px;
+}
+
+#tickets {
+    margin: 10px;
+}
+
+#tickets li {
+    display: inline-block;
+}
+
+
+.ticket {
+    border: 2px solid black;
+    width: 250px;
+    margin: 2px 0px 2px 0px;
+    padding: 2px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 5px;
+}
+
+.ticket p {
     margin: 1px;
 }

@@ -4,13 +4,13 @@ if(!window.localStorage) {
     throw new Error("Local storage not available");
 }
 
-let projects = {
+let projects_io = {
     1: {id:1, name:"project1", tickets: 2},
     2: {id:2, name:"project2", tickets: 1},
     3: {id:3, name:"project3", tickets: 0}
 };
 
-let users = {
+let users_io = {
     1: {id: 1, name: "user1", surname: "surname", age: 1},
     2: {id: 2, name: "user2", surname: "surname", age: 1}
 };
@@ -27,20 +27,20 @@ let users = {
 // resolution summary,
 // status
 
-let tickets = [
-    {summary:"summary", detailed:"detailed", created_by: 1, created: new Date(), project: 1, assigned_to: 2,
+let tickets_io = [
+    {id:1, summary:"summary", detailed:"detailed", created_by: 1, created: new Date(), project: 1, assigned_to: 2,
     priority: "low", target: new Date(), actual: new Date(), res_summary: "summary", status:"closed"},
 
-    {summary:"summary", detailed:"detailed", created_by: 2, created: new Date(), project: 2, assigned_to: 1,
+    {id:2, summary:"summary", detailed:"detailed", created_by: 2, created: new Date(), project: 2, assigned_to: 1,
     priority: "medium", target: new Date(), actual: null, res_summary: null, status:"open"},
 
-    {summary:"summary", detailed:"detailed", created_by: 1, created: new Date(), project: 1, assigned_to: null,
+    {id:3, summary:"summary", detailed:"detailed", created_by: 1, created: new Date(), project: 1, assigned_to: null,
     priority: "low", target: new Date(), actual: new Date(), res_summary: "summary", status:"closed"}
 ];
 
-// updateLocalStorageItem("Projects", projects);
-// updateLocalStorageItem("Users", users);
-// updateLocalStorageItem("Tickets", tickets);
+// updateLocalStorageItem("Projects", projects_io);
+// updateLocalStorageItem("Users", users_io);
+// updateLocalStorageItem("Tickets", tickets_io);
 
 if(localStorage.getItem("Projects") === null) {
     localStorage.setItem("Projects", {});
