@@ -1,8 +1,17 @@
 
-function Ticket(id, summary, detailed) {
+function Ticket(id, summary, detailed, createdBy, created, project, assignedTo, status, priority, targetDate, actualDate, resSummary) {
     this.id = id;
     this.summary = summary;
     this.detailed = detailed;
+    this.createdBy = createdBy;
+    this.created = created;
+    this.project = project;
+    this.assignedTo = assignedTo;
+    this.status = status;
+    this.priority = priority;
+    this.targetDate = targetDate;
+    this.actualDate = actualDate;
+    this.resSummary = resSummary;
 }
 
 function createTicketBlock(ticket) {

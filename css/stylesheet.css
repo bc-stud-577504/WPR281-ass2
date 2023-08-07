@@ -85,3 +85,18 @@ nav a {
 .ticket p {
     margin: 1px;
 }
+
+#ticket {
+    margin: 10px;
+    padding: 5px;
+    border: 2px solid black;
+    width: 50%;
+}
+
+#ticket p {
+    margin: 1px;
+}
+
+#ticket li {
+    display: inline-block;
+}
