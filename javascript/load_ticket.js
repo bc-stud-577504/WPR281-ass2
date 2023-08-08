@@ -19,7 +19,7 @@ for (let key in ticket) {
         document.getElementById("ticket").innerHTML += `<p>${key}: ${userBy.email}</p>`;
     }
     else if(key === "assignedTo"){
-        document.getElementById("ticket").innerHTML += `<p>${key}: ${userTo.email}</p>`;
+        document.getElementById("ticket").innerHTML += `<p>${key}: ${(ticket.assignedTo!=null)?userTo.email:"nobody"}</p>`;
     }
     else {
         document.getElementById("ticket").innerHTML += `<p>${key}: ${ticket[key]}</p>`;
