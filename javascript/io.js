@@ -38,9 +38,9 @@ let tickets_io = [
     priority: "low", target: new Date(), actual: new Date(), res_summary: "summary", status:"closed"}
 ];
 
-updateLocalStorageItem("Projects", projects_io);
-updateLocalStorageItem("Users", users_io);
-updateLocalStorageItem("Tickets", tickets_io);
+// updateLocalStorageItem("Projects", projects_io);
+// updateLocalStorageItem("Users", users_io);
+// updateLocalStorageItem("Tickets", tickets_io);
 
 if(localStorage.getItem("Projects") === null) {
     localStorage.setItem("Projects", {});

@@ -4,6 +4,9 @@ let tickets = getLocalStorageItem("Tickets");
 let ticketID = parseInt(new URLSearchParams(window.location.search).get("id"));
 let ticket = new Ticket();
 
+// passes the ticket id to the edit ticket href
+document.getElementById("edit").href = `./edit_ticket.html?id=${ticketID}`;
+
 for (let tkt of tickets) {
     if (tkt.id === ticketID) {
         ticket = tkt;
