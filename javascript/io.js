@@ -11,8 +11,8 @@ let projects_io = {
 };
 
 let users_io = {
-    1: {id: 1, name: "user1", surname: "surname", age: 1},
-    2: {id: 2, name: "user2", surname: "surname", age: 1}
+    1: {id: 1, name: "user1", surname: "surname", email: "user1_email", username: "username"},
+    2: {id: 2, name: "user2", surname: "surname", email: "user2_email", username: "username"}
 };
 
 // summary, 
@@ -28,13 +28,13 @@ let users_io = {
 // status
 
 let tickets_io = [
-    {id:1, summary:"summary", detailed:"detailed", created_by: 1, created: new Date(), project: 1, assigned_to: 2,
+    {id:1, summary:"summary", detailed:"detailed", createdBy: 1, created: new Date(), project: 1, assignedTo: 2,
     priority: "low", target: new Date(), actual: new Date(), res_summary: "summary", status:"closed"},
 
-    {id:2, summary:"summary", detailed:"detailed", created_by: 2, created: new Date(), project: 2, assigned_to: 1,
+    {id:2, summary:"summary", detailed:"detailed", createdBy: 2, created: new Date(), project: 2, assignedTo: 1,
     priority: "medium", target: new Date(), actual: null, res_summary: null, status:"open"},
 
-    {id:3, summary:"summary", detailed:"detailed", created_by: 1, created: new Date(), project: 1, assigned_to: null,
+    {id:3, summary:"summary", detailed:"detailed", createdBy: 1, created: new Date(), project: 1, assignedTo: null,
     priority: "low", target: new Date(), actual: new Date(), res_summary: "summary", status:"closed"}
 ];
 

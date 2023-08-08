@@ -16,10 +16,10 @@ function Ticket(id, summary, detailed, createdBy, created, project, assignedTo, 
 
 function createTicketBlock(ticket) {
 
-    let user = getLocalStorageItem("Users")[ticket.assigned_to];
+    let user = getLocalStorageItem("Users")[ticket.assignedTo];
 
     return `<div onclick="location.href='/pages/ticket.html?id=${ticket.id}'" class='ticket' id='ticket${ticket.id}'>
                 <p><b>${ticket.summary}</b></p>
-                <p>Assigned to: ${(ticket.assigned_to!=null)?user.name:"nobody"}</p>
+                <p>Assigned to: ${(ticket.assignedTo!=null)?user.email:"nobody"}</p>
             </div>`;
 }

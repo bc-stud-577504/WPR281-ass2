@@ -11,6 +11,17 @@ for (let tkt of tickets) {
     }
 }
 
+let userBy = getLocalStorageItem("Users")[ticket.createdBy];
+let userTo = getLocalStorageItem("Users")[ticket.assignedTo];
+
 for (let key in ticket) {
-    document.getElementById("ticket").innerHTML += `<p>${key}: ${ticket[key]}</p>`;
+    if(key === "createdBy") {
+        document.getElementById("ticket").innerHTML += `<p>${key}: ${userBy.email}</p>`;
+    }
+    else if(key === "assignedTo"){
+        document.getElementById("ticket").innerHTML += `<p>${key}: ${userTo.email}</p>`;
+    }
+    else {
+        document.getElementById("ticket").innerHTML += `<p>${key}: ${ticket[key]}</p>`;
+    }
 }
