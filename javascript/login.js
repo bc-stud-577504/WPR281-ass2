@@ -58,7 +58,7 @@ function start(){
 
             loginFunction(email, password)
             console.log("go to home page")
-            window.location.href = window.location.origin;
+            window.location.href = window.location.origin + "/pages/home.html";
         })
         
     }
