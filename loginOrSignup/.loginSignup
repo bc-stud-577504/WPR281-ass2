@@ -1,0 +1,7 @@
+--Just run the LoginSignup html sheet
+--things i would like to add:
+     1. checking the length of the password (password must be atleast 8 characters)
+     2. Accurate email type has been entered(.com or .ac.za or hotmail idk..).
+       right now it just checks if a correct email address has been entered and if the email is in the storage.
+     3. Lastly a link route to the home page. At the moment once an account is successfully login it writes in the console
+     "route to home page" so actual routting to home page must be added at the end.
