@@ -1,16 +1,16 @@
 
 let tickets = getLocalStorageItem("Tickets");
-
 let ticketID = parseInt(new URLSearchParams(window.location.search).get("id"));
+let ticketIndx = new Number();
 
-let ticketIndx;
-
+// get index of the ticket in the array
 for (let indx in tickets) {
     if(tickets[indx].id === ticketID) {
         ticketIndx = indx;
     }
 }
 
+// populate the form with current content for easier editing
 document.getElementById("summary").value = tickets[ticketIndx].summary;
 document.getElementById("detailed").value = tickets[ticketIndx].detailed;
 let dropdown = document.getElementById("assignTo");
@@ -27,6 +27,7 @@ for (let key in users) {
 }
 
 document.getElementById("edit-ticket").addEventListener("submit", (event) => {
+    // allows us to redirect to the home page without passing form arguments
     event.preventDefault();
 
     let summary = document.getElementById("summary").value;
@@ -35,20 +36,15 @@ document.getElementById("edit-ticket").addEventListener("submit", (event) => {
     // gets the selected option from the dropdown
     let userID = document.getElementById("assignTo").value;
 
-    console.log(tickets[ticketIndx].summary);
-    console.log(tickets[ticketIndx].detailed);
-    console.log(tickets[ticketIndx].assignedTo);
-
+    // assign the new values
     tickets[ticketIndx].summary = summary;
     tickets[ticketIndx].detailed = detailed;
     tickets[ticketIndx].assignedTo = parseInt(userID);
 
-    console.log(tickets[ticketIndx].summary);
-    console.log(tickets[ticketIndx].detailed);
-    console.log(tickets[ticketIndx].assignedTo);
-
+    // update the stored tickets
     updateLocalStorageItem("Tickets", tickets);
 
+    // redirects to homepage
     window.location.href = window.location.origin;
     return false;
 });
