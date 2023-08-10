@@ -190,8 +190,22 @@ function formInputs(){
     //check username availability
     let userNameAvaiable = checkUserNameAvailability(usernameEntered)
 
+    if(userNameAvaiable) {
+        document.querySelector('#existingUserName').classList.add('hide-form')
+    }
+    else {
+        document.querySelector('#existingUserName').classList.remove('hide-form');
+    }
+
     //check email availability
     let emailAvailable = checkEmailAvailability(emailEntered)
+
+    if(emailAvailable) {
+        document.querySelector('#existingEmail').classList.add('hide-form');
+    }
+    else {
+        document.querySelector('#existingEmail').classList.remove('hide-form');
+    }
 
     //check Password Match
     let passwordMatch = checkPasswordMatch(password1Entered, password2Entered)
@@ -217,28 +231,6 @@ function formInputs(){
         //restart entire operation
         creatAccount()
     }
-}
-
-function checkUserNameAvailability(userNamePassed){
-    for(let i = 0; i < AllAccounts.length; i++){
-        if(AllAccounts[i].Username.toLowerCase() == userNamePassed.toLowerCase()){
-            document.querySelector('#existingUserName').classList.remove('hide-form')
-            return false;
-        }
-    }
-    document.querySelector('#existingUserName').classList.add('hide-form')
-    return true;
-}
-
-function checkEmailAvailability(emailPassed){
-    for(let i = 0; i < AllAccounts.length; i++){
-        if(AllAccounts[i].Email.toLowerCase() == emailPassed.toLowerCase()){
-            document.querySelector('#existingEmail').classList.remove('hide-form')
-            return false;
-        }
-    }
-    document.querySelector('#existingEmail').classList.add('hide-form')
-    return true;
 }
 
 function checkPasswordMatch(passedPassword1, passedPassword2)
