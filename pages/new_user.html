@@ -16,28 +16,32 @@
             </div>
         </nav>
 
-        <form id="edit-ticket">
+        <form id="new-user">
             <div>
-                <label>summary:</label>
-                <input id="summary" name="summary" type="text">
+                <label>Name:</label>
+                <input id="name" name="name" type="text" required>
             </div>
 
             <div>
-                <label>detailed description:</label>
-                <input id="detailed" name="detailed" type="text">
+                <label>Surname:</label>
+                <input id="surname" name="surname" type="text" required>
             </div>
 
             <div>
-                <label>assign to:</label>
-                <select id="assignTo">
-                    <option>nobody</option>
-                </select>
+                <label>Email:</label>
+                <input id="email" name="email" type="email" required>
             </div>
 
             <div>
-                <input id="submit" type="submit" value="save changes">
+                <label>Username:</label>
+                <input id="username" name="username" type="text" required>
+            </div>
+
+            <div>
+                <input id="submit" type="submit" value="create user">
             </div>
         </form>
     </body>
-    <script src="../javascript/edit_ticket.js"></script>
+    <script src="../javascript//utils/user.js"></script>
+    <script src="../javascript/new_user.js"></script>
 </html>

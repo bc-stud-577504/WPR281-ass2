@@ -45,6 +45,6 @@ document.getElementById("edit-ticket").addEventListener("submit", (event) => {
     updateLocalStorageItem("Tickets", tickets);
 
     // redirects to homepage
-    window.location.href = window.location.origin;
+    window.location.href = window.location.origin + "/pages/home.html";
     return false;
 });

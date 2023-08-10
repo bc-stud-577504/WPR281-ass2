@@ -67,4 +67,26 @@ function updateLocalStorageItem(key, value) {
     localStorage.setItem(key, JSON.stringify(value));
 }
 
+function checkUserNameAvailability(userNamePassed){
+    let AllAccounts = getLocalStorageItem("Users");
+
+    for (let key in AllAccounts) {
+        if(AllAccounts[key].username.toLowerCase() == userNamePassed.toLowerCase()){
+            return false;
+        }
+    }
+    return true;
+}
+
+function checkEmailAvailability(emailPassed){
+    let AllAccounts = getLocalStorageItem("Users");
+
+    for (let key in AllAccounts) {
+        if(AllAccounts[key].email.toLowerCase() == emailPassed.toLowerCase()){
+            return false;
+        }
+    }
+    return true;
+}
+
 //export {getLocalStorageItem, updateLocalStorageItem};
