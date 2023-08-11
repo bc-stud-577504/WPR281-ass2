@@ -21,7 +21,7 @@ function createProject(event) {
 
     updateLocalStorageItem("Projects", projects);
 
-    window.location.href = window.location.origin;
+    window.location.href = window.location.origin + "/pages/home.html";
     return false;
 }
 

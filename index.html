@@ -1,29 +1,94 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Document</title>
-        <link rel="stylesheet" href="./css/stylesheet.css">
-        <script src="./javascript/io.js"></script>
-        <script src="./javascript/utils/project.js"></script>
-    </head>
-    <body>
-        <nav>
-            <div class="nav-wrapper">
-                <ul>
-                    <li><a href="#"><b>HOME</b></a></li>
-                    <li><a href="./pages/all_tickets.html">all tickets</a></li>
-                </ul>
-            </div>
-        </nav>
 
-        <div id="projects">
-            <ul>
-                <li><h1>Projects</h1></li>
-                <li><a href="./pages/new_project.html"><img src="./images/add-symbol.png" alt=""></a></li>
-            </ul>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="./css/sign-up.css">
+    <script src="./javascript/io.js"></script>
+</head>
+
+    <body>
+        <div id="form">
+
+            <!--Action is where we send the form data-->
+            <form>
+                <h2>Login</h2>
+                <div class="form-group">
+    
+                    <div class="nest container">
+                        <div class="row">
+                            <div class="col"></div>
+                            <div class="col-11"><label>Email address</label>
+                                <input type="email" id="email4Login" class="form-control" placeholder="Enter email">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="form-group">
+                    <div class="row">
+                        <div class="col password"></div>
+                        <div class="col-11"><label>Password</label>
+                            <input type="password" class="form-control" placeholder="Password" id="password4Login">
+                        </div>
+                        <p class="nonmatching-password hide-form" id="nonexistingAcc">User does not exist. please sign-up
+                        </p>
+                    </div>
+                    <div class="button">
+    
+                        <p class="nonmatching-password hide-form" id="IncorrectInfo">Email Adress or password is incorrect.
+                        </p>
+                        <button type="submit" class="btn btn-primary" id="loginButton">Login</button>
+                        <button type="submit" class="btn btn-success" id="SignupButton">sign-up</button>
+    
+                    </div>
+                    <p id="successfullAccount" class="hide-form"> Account Successfully created! Please Login</p>
+            </form>
         </div>
+    
+        <div id="form2" class="hide-form">
+            <h2>Create an Account</h2>
+    
+            <form id="createAccountForm">
+                <div class="form-group">
+                    <label> Username</label>
+                    <input type="text" id="username" class="form-control" placeholder="Username">
+                    <p class="nonmatching-password hide-form" id="existingUserName">Username Already exists please try a
+                        different one.</p>
+                </div>
+                <div class="form-group">
+                    <label>Email address</label>
+                    <input type="email" id="newEmail" class="form-control" placeholder="Email">
+                    <p class="nonmatching-password hide-form" id="existingEmail">Email address Already exists please try a
+                        different one.</p>
+                </div>
+    
+                <div class="form-group">
+                    <label>Create your Password</label>
+                    <input type="password" id="password1" class="form-control" placeholder="Password">
+                </div>
+                <div class="form-group">
+                    <label>Confirm your Password</label>
+                    <input type="password" id="password2" class="form-control" placeholder="Password">
+                </div>
+                <p class="nonmatching-password hide-form" id="non-matching-passwords">Passwords must match please try again.
+                </p>
+                <div class="button">
+                    <button type="submit" class="btn btn-success button" id="form2Submit">sign-up</button>
+                    <button type="submit" class="btn btn-primary button" id="loginButton2">Login</button>
+                </div>
+    
+            </form>
+    
+            <script src="./javascript/login.js"></script>
     </body>
-    <script src="./javascript/load_projects.js"></script>
+
 </html>
