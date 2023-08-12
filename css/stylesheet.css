@@ -5,6 +5,18 @@
     box-sizing: border-box;
     font-family: sans-serif;
 }
+.background{
+    background-image: url(https://e0.pxfuel.com/wallpapers/534/418/desktop-wallpaper-management-project-manager.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#Center{
+    height: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
 body {
     margin: 0;
@@ -50,13 +62,15 @@ nav a {
 }
 
 .project {
-    border: 2px solid black;
+    border: 2px solid rgb(13, 110, 253);
+    background-color: rgb(48, 49, 52);
     width: 750px;
-    margin: 2px 0px 2px 0px;
+    margin: 5px auto;
     padding: 2px;
     display: flex;
     flex-direction: column;
     border-radius: 5px;
+    text-align: center;
 }
 
 .project p {
@@ -73,13 +87,15 @@ nav a {
 
 
 .ticket {
-    border: 2px solid black;
-    width: 250px;
-    margin: 2px 0px 2px 0px;
+    border: 2px solid rgb(13, 110, 253);
+    background-color: rgb(48, 49, 52);
+    width: 750px;
+    margin: 5px auto;
     padding: 2px;
     display: flex;
     flex-direction: column;
     border-radius: 5px;
+    text-align: center;
 }
 
 .ticket p {
@@ -89,7 +105,7 @@ nav a {
 #ticket {
     margin: 10px;
     padding: 5px;
-    border: 2px solid black;
+    border: 2px solid rgb(13, 110, 253);
     width: 50%;
 }
 
@@ -99,4 +115,19 @@ nav a {
 
 #ticket li {
     display: inline-block;
+}
+
+.InputAligns{
+    border: 2px solid rgb(13, 110, 253);
+    background-color: rgb(48, 49, 52);
+    width: 450px;
+    margin: 5px auto;
+    padding: 2px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 5px;
+    text-align: center;
+}
+.BiggerBox{
+    height: 120px;
 }
