@@ -1,16 +1,8 @@
 # WPR281-ass2: Bug Tracking system
 The Bug tracking system was created by the following students from Belgium Campus Pretoria:
--Name:  Emile 
-Surname:  Botha
-Student number:  577701
-
--Name:  Neill
-Surname:  Engelbrecht
-Student number:  577504
-
--Name:  Nosipho Precious
-Surname:  Donkrag
-Student number:  577354
+Emile Botha (577701)
+Neill Engelbrecht (577504)
+Nosipho Precious Donkrag (577354)
 
    ##**The Bug Tracking System**
     The following project was created to log and monitor bugs or errors that may occur during the testing of different software programs. The system is created with the aim of supporting project management in the software industry and efficient communication of problems (bugs/errors) between team members.
