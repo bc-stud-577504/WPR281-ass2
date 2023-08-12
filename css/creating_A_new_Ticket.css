@@ -1,0 +1,63 @@
+body .card{
+    margin: auto;
+    border: solid 0.2rem rgba(87, 172, 143, 0.603);
+}
+body .card-body{
+    background-color: white;
+    color: black;
+}
+body .card .card-header{
+    background-color: rgba(106, 209, 175, 0.603);
+}
+.card-header .logo{
+    display: inline;
+}
+.card-header .bug{
+    width: 3rem;
+    height: 3rem;
+    
+    background-image: url('../images/bug.JPG');
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.container .row #CreateAnIssue{
+    margin: auto;
+    text-align: center;
+    
+    font-weight: bold;
+    margin-top: 0.5rem;
+}
+.card .card-body .btn{
+    background-color: rgba(23, 99, 80, 0.603);
+    font-weight: bold;
+    margin-left: 30%;
+    border: none;
+}
+.makeRedBorder{
+    border: red solid 0.2rem;
+    border-radius: 0.5rem;
+}
+.hiden-paragraph{
+    text-align: center;
+    color: RED;
+    
+}
+.hide-form{
+    display: none;
+}
+.card .container .card-header .form-group select{
+    border-radius: 0.3rem;
+    background-color: white;
+    padding: 0.5rem;
+    border: 0.3rem solid rgba(60, 168, 145, 0.603);
+}
+#successful{
+    color: rgb(59, 168, 59);
+    text-align: center;
+}
+#nameOfUser{
+    font-weight: bolder;
+    font-size: larger;
+    color: rgba(45, 129, 111, 0.603);
+
+}

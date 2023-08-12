@@ -7,22 +7,47 @@
         <link rel="stylesheet" href="../css/stylesheet.css">
         <script src="../javascript/io.js"></script>
         <script src="../javascript/utils/ticket.js"></script>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
     </head>
-    <body>
-        <nav>
-            <div class="nav-wrapper">
-                <ul>
-                    <li><a href="./home.html"><b>HOME</b></a></li>
-                </ul>
+    <body class="background">
+        <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="./home.html">Home</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="../pages/all_tickets.html">all tickets</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" href="../pages/new_user.html">create user</a>
+                  </li>
+                </ul>             
+              </div>
             </div>
-        </nav>
+          </nav>
 
-        <div id="ticket">
+          <br>
+          <br>
+          <br>
+          <div class="card text-bg-dark text-center container" style="width: 650px;" >
+
+            <h1>Ticket details</a></h1>
+            <div class="card-img-top mx-auto text-center " id="ticket">
+                <ul>
+                    <li><h1>Ticket</h1></li>
+                    <li><a id="edit" href=""><img src="../images/add-symbol.png" alt=""></a></li>
+                </ul>              
+            </div>
+
+        <!-- <div id="ticket">
             <ul>
                 <li><h1>Ticket</h1></li>
                 <li><a id="edit" href=""><img src="../images/add-symbol.png" alt=""></a></li>
             </ul>
-        </div>
+        </div> -->
     </body>
     <script src="../javascript/load_ticket.js"></script>
 </html>

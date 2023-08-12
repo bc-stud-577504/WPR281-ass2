@@ -6,6 +6,7 @@
         <title>Document</title>
         <link rel="stylesheet" href="../css/stylesheet.css">
         <script src="../javascript/io.js"></script>
+        <script src="../javascript/utils/ticket.js"></script>
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
     </head>
     <body class="background">
@@ -34,41 +35,51 @@
           
           <div class="card text-bg-dark text-center container" style="width: 550px;" >
             <h1>Edit ticket</a></h1>
-            <div class="card-img-top mx-auto text-center " id="edit-ticket">   
-                    <div class="InputAligns">
-                        <label>summary:</label>
-                        <input id="summary" name="summary" type="text">
-                    </div>
+            <div class="card-img-top mx-auto text-center " id="new-ticket">   
+                <div class="InputAligns">
+                    <label>summary:</label>
+                    <input id="summary" name="summary" type="text">
+                </div>
         
-                    <div class="InputAligns">
-                        <label>detailed description:</label>
-                        <textarea name="detailed"  id="detailed" cols="50" rows="5"></textarea>
-                    </div>
+                <div class="InputAligns">
+                    <label>detailed description:</label>
+                    <textarea name="detailed"  id="detailed" cols="50" rows="5"></textarea>
+                </div>
+                <div class="InputAligns">
+                    <label>created by:</label>
+                <select id="createdBy" required>
+                    <option>nobody</option>
+                </select>
+                </div>
         
-                    <div class="InputAligns"> 
-                        <label>assign to:</label>
-                        <select id="assignTo">
-                            <option>nobody</option>
-                        </select>
-                    </div>
-        
-                    <div>
-                        <input id="submit" class="btn btn-primary" type="submit" value="save changes">
-                    </div>                         
+                <div class="InputAligns"> 
+                    <label>assign to:</label>
+                    <select id="assignTo">
+                    <option>nobody</option>
+                    </select>
+                </div>
+                <div class="InputAligns">
+                    <label>priority:</label>
+                <select id="priority" required>
+                    <option>low</option>
+                    <option>medium</option>
+                    <option>high</option>
+                </select>
+                </div>
+                <div class="InputAligns">
+                    <label>target resolution date:</label>
+                    <input id="target-date" name="target-date" type="date">
+                </div>
+                <div>
+                    <input id="submit" class="btn btn-primary" type="submit" value="save changes">
+                </div>                         
             </div>
 
 
 
 
-        <!-- <nav>
-            <div class="nav-wrapper">
-                <ul>
-                    <li><a href="./home.html"><b>HOME</b></a></li>
-                </ul>
-            </div>
-        </nav> -->
 
-        <!-- <form id="edit-ticket">
+        <!-- <form id="new">
             <div>
                 <label>summary:</label>
                 <input id="summary" name="summary" type="text">
@@ -80,6 +91,13 @@
             </div>
 
             <div>
+                <label>created by:</label>
+                <select id="createdBy" required>
+                    <option>nobody</option>
+                </select>
+            </div>
+
+            <div>
                 <label>assign to:</label>
                 <select id="assignTo">
                     <option>nobody</option>
@@ -87,10 +105,23 @@
             </div>
 
             <div>
+                <label>priority:</label>
+                <select id="priority" required>
+                    <option>low</option>
+                    <option>medium</option>
+                    <option>high</option>
+                </select>
+            </div>
+
+            <div>
+                <label>target resolution date:</label>
+                <input id="target-date" name="target-date" type="date">
+            </div>
+
+            <div>
                 <input id="submit" type="submit" value="save changes">
             </div>
         </form> -->
     </body>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
-    <script src="../javascript/edit_ticket.js"></script>
+    <script src="../javascript/new_ticket.js"></script>
 </html>
