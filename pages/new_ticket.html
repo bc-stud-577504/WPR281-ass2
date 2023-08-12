@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" href="../css/stylesheet.css">
+        <script src="../javascript/io.js"></script>
+        <script src="../javascript/utils/ticket.js"></script>
+    </head>
+    <body>
+        <nav>
+            <div class="nav-wrapper">
+                <ul>
+                    <li><a href="./home.html"><b>HOME</b></a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <form id="edit-ticket">
+            <div>
+                <label>summary:</label>
+                <input id="summary" name="summary" type="text">
+            </div>
+
+            <div>
+                <label>detailed description:</label>
+                <input id="detailed" name="detailed" type="text">
+            </div>
+
+            <div>
+                <label>created by:</label>
+                <select id="createdBy" required>
+                    <option>nobody</option>
+                </select>
+            </div>
+
+            <div>
+                <label>assign to:</label>
+                <select id="assignTo">
+                    <option>nobody</option>
+                </select>
+            </div>
+
+            <div>
+                <label>priority:</label>
+                <select id="priority" required>
+                    <option>low</option>
+                    <option>medium</option>
+                    <option>high</option>
+                </select>
+            </div>
+
+            <div>
+                <label>target resolution date:</label>
+                <input id="target-date" name="target-date" type="date">
+            </div>
+
+            <div>
+                <input id="submit" type="submit" value="save changes">
+            </div>
+        </form>
+    </body>
+    <script src="../javascript/new_ticket.js"></script>
+</html>
